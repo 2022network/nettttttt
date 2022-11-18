@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/video.js/dist/video.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style2.css" />
+    <title>Youtube Mobile</title>
+    <script
+      src="https://kit.fontawesome.com/2d323a629b.js"
+      crossorigin="anonymous"
+    ></script>
+
+  </head>
+
+  <body>
+    
+    <!-- header -->
+    <header>
+        <div button class="logo" onClick="location.href='/'"></button>
+            <i class="fab fa-youtube"></i>
+            <span class="title">network project</span>
+          </div>
+          <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+    </header>
+
+
+
+    <div class="playerAndInfoAndMessage">
+      <div class="playerAndInfo">
+        <!-- live video -->
+
+        <video
+        id="my-video"
+        class="video-js vjs-big-play-button vjs-big-play-centered"
+        controls 
+        preload="auto"
+        width="854"
+        height="480"
+    
+        poster="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg"
+        data-setup='{"controls": true, "fluid": true, "autoplay": true, "muted": true, "playbackRates": [0.5, 1, 1.5, 2]}'>
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to a
+          web browser that
+          <a href="https://videojs.com/html5-video-support/" target="_blank"
+            >supports HTML5 video</a
+          >
+        </p>
+    
+      </video>
+
+
+        <!-- live info -->
+        <section class="info">
+          <!-- metadata -->
+          <div class="metadata">
+            <div class="title">
+              <span class="title">
+                게임하고싶어!!
+              </span>
+              <button class="moreBtn">
+                <i class="fas fa-caret-down"></i>
+             </button>
+            </div>
+            <div class="views">2,345 views</div>
+          </div>
+          <!-- channel -->
+          <div class="channel">
+            <div class="metadata">
+              <img src="/cat.jpg" alt="프로필">
+              <div class="info">
+                <span class="name">Yerim</span>
+              </div>
+        </section>
+        </div>
+      
+      <!-- live message -->
+      <section class="message">
+        <span class="title">댓글창</span>
+        <div class="message">
+          <div>
+            <input type="text" id="test" placeholder="메시지를 입력해주세요..">
+            <button onclick="send()">전송</button>
+          </div>
+        </div>
+      </section>
+
+    </div> 
+
+
+
+
+  </body>
+</html>

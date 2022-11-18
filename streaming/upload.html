@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>동영상 업로드</title>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="clearfix">
+            <div class="logo">
+                <button class="logobtn" >로고</button>
+            </div>
+            <div class="search">
+                <input type="search">
+                <button class="searchbtn">검색</button>
+            </div>
+            <div class="logout">
+                <button class="logoutbtn">로그아웃</button>
+            </div>
+        </header>
+        <main id="content" class="clearfix">
+            <div class="uploadvideo">
+                <p>동영상 업로드</p>
+                <button class="nextset" onClick="location.href='upload2.html'">다음</button>
+            </div>
+            <hr>
+            <form action="UploadService">
+                <td><input class="fileselect" type="file" value="파일 선택" name="file"/></td>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>스트리밍 페이지</title>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="clearfix">
+            <div class="logo">
+                <button class="logobtn" onClick="location.href='/'">로고</button>
+            </div>
+            <div class="logout">
+                <button class="logoutbtn">로그아웃</button>
+            </div>
+        </header>
+        <main id="content2" class="clearfix">
+            <div class="stream">
+                <div class="streamvideo">
+                    <!--스트리밍 화면-->
+                </div>
+                <div class="chatting">
+                    실시간 댓글
+                    <!--실시간 댓글-->
+                </div>
+            </div>  
+        </main>
+        <input class="title3" type="text" placeholder="제목" onfocus="this.placeholder=''" onblur="this.placeholder='제목'"/>
+        <div class="etc">
+            <input class="ex2" type="text" placeholder="설명란" onfocus="this.placeholder=''" onblur="this.placeholder='설명란'"/>
+            <button class="streamend">스트리밍 종료</button>
+        </div>
+    </div>
+</body>
+</html>
